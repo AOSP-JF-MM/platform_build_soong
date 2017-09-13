@@ -99,6 +99,7 @@ type variableProperties struct {
 
 		// include Jdc variables
 		Jdc android_jdc.Product_variables
+		Qualcomm android_jdc.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -170,6 +171,7 @@ type productVariables struct {
 
 	// include Jdc variables
 	Jdc android_jdc.ProductVariables
+	Qualcomm android_jdc.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
