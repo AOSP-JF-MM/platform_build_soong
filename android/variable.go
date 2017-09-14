@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"jdc/soong/android"
+	"jdc/soong/android_jdc"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -98,7 +98,7 @@ type variableProperties struct {
 		}
 
 		// include JDC variables
-		JDC android.Product_variables
+		JDC android_jdc.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -169,7 +169,7 @@ type productVariables struct {
 	Override_rs_driver *string `json:",omitempty"`
 
 	// include JDC variables
-	JDC android.ProductVariables
+	JDC android_jdc.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
