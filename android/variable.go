@@ -88,8 +88,8 @@ type variableProperties struct {
 			Cppflags []string
 		}
 
-		// include JDC variables
-		JDC android_jdc.Product_variables
+		// include Jdc variables
+		Jdc android_jdc.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -156,8 +156,8 @@ type productVariables struct {
 
 	Override_rs_driver *string `json:",omitempty"`
 
-	// include JDC variables
-	JDC android_jdc.ProductVariables
+	// include Jdc variables
+	Jdc android_jdc.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
